@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spice & Spoon | Restaurant</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .hero-section {
+      height: 100vh;
+      background: url('https://source.unsplash.com/1600x900/?restaurant,food') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 4px black;
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Header -->
+  <header class="hero-section text-center">
+    <div>
+      <h1 class="display-4 fw-bold">Spice & Spoon</h1>
+      <p class="lead">Delicious food served fresh</p>
+    </div>
+  </header>
+
+  <!-- Welcome Text -->
+  <main class="container my-5 text-center">
+    <h2>Welcome to Our Restaurant!</h2>
+    <p>Check out our menu below and book your table today.</p>
+  </main>
+
+  <!-- Menu Section -->
+  <section class="container my-5" id="menu">
+    <h2 class="text-center mb-4">Our Menu</h2>
+    <div class="row g-4">
+      <!-- Menu Item -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://source.unsplash.com/400x300/?pasta" class="card-img-top" alt="Pasta">
+          <div class="card-body">
+            <h5 class="card-title">Creamy Alfredo Pasta</h5>
+            <p class="card-text">Pasta in creamy white sauce with herbs and vegetables.</p>
+            <p class="fw-bold text-primary">₹250</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://source.unsplash.com/400x300/?pizza" class="card-img-top" alt="Pizza">
+          <div class="card-body">
+            <h5 class="card-title">Margherita Pizza</h5>
+            <p class="card-text">Classic cheese pizza with tomato sauce and basil.</p>
+            <p class="fw-bold text-primary">₹300</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://source.unsplash.com/400x300/?burger" class="card-img-top" alt="Burger">
+          <div class="card-body">
+            <h5 class="card-title">Veggie Burger</h5>
+            <p class="card-text">Juicy grilled patty with lettuce and sauces.</p>
+            <p class="fw-bold text-primary">₹180</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  
+<section class="container my-5" id="booking">
+  <h2 class="text-center mb-4">Book a Table</h2>
+  <form id="bookingForm" class="row g-3">
+    
+    <div class="col-md-6">
+      <label for="name" class="form-label">Your Name</label>
+      <input class="form-control" type="text" id="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="col-md-3">
+      <label for="date" class="form-label">Date</label>
+      <input class="form-control" type="date" id="date" required>
+    </div>
+
+    <div class="col-md-3">
+      <label for="time" class="form-label">Time</label>
+      <input class="form-control" type="time" id="time" required>
+    </div>
+
+    <div class="col-md-3">
+      <label for="tableSize" class="form-label">Table Size</label>
+      <select class="form-select" id="tableSize" required>
+        <option value="">Select Table Size</option>
+        <option value="2">2 Persons</option>
+        <option value="4">4 Persons</option>
+        <option value="6">6 Persons</option>
+      </select>
+    </div>
+
+    <div class="col-md-12">
+      <button class="btn btn-primary" type="submit">Book Now</button>
+    </div>
+  </form>
+
+  <div id="bookingMessage" class="mt-4"></div>
+</section>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    &copy; 2025 Spice & Spoon. All rights reserved.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById(\"bookingForm\").addEventListener(\"submit\", function (e) {
+      e.preventDefault();
+      const name = document.getElementById(\"name\").value;
+      const date = document.getElementById(\"date\").value;
+      const time = document.getElementById(\"time\").value;
+      const tableSize = document.getElementById(\"tableSize\").value;
+
+      document.getElementById(\"bookingMessage\").innerHTML = `
+        <div class='alert alert-success'>
+          Thank you, <strong>${name}</strong>! Your table for <strong>${tableSize}</strong> on <strong>${date}</strong> at <strong>${time}</strong> is booked.
+        </div>
+      `;
+
+      document.getElementById(\"bookingForm\").reset();
+    });
+  </script>
+</body>
+</html>
