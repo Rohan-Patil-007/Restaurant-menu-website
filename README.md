@@ -1,6 +1,6 @@
 # My-first-frontend-project
 
-Project title: Spice & Spoon – Responsive Restaurant Website
+#Project title: Spice & Spoon – Responsive Restaurant Website
 Spice & Spoon is a modern, responsive single-page restaurant website built using HTML, CSS, Bootstrap, and JavaScript. The project is designed to simulate a real-world restaurant interface where users can:
 
 View a stylish food menu with images, names, and prices
