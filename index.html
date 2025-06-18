@@ -128,6 +128,24 @@
   </footer>
 
   <!-- JavaScript -->
-   <script src="js/script.js"></script>
+   <script>
+// Booking Form Submission
+document.getElementById("bookingForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const date = document.getElementById("date").value;
+  const time = document.getElementById("time").value;
+  const tableSize = document.getElementById("tableSize").value;
+
+  document.getElementById("bookingMessage").innerHTML = `
+    <div class="alert alert-success">
+      Thank you, <strong>${name}</strong>! Your table for <strong>${tableSize}</strong> on <strong>${date}</strong> at <strong>${time}</strong> has been booked.
+    </div>
+  `;
+
+  document.getElementById("bookingForm").reset();
+});
+</script>
 </body>
 </html>
