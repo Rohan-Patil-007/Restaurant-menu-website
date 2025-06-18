@@ -36,8 +36,7 @@ This project demonstrates front-end development skills, mobile-first design, res
 
    ## ✍️ Author
 
-Name : Rohan Santosh Patil
-Email: rohan003rohan@gmail.com
+Name : Rohan Santosh Patil              Email: rohan003rohan@gmail.com
 GitHub: Rohan-Patil-007
 https://github.com/Rohan-Patil-007
 
