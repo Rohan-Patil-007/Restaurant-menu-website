@@ -35,15 +35,23 @@ This project demonstrates front-end development skills, mobile-first design, res
 2. Open the `index.html` file in any web browser.
 3. Explore the menu and try booking a table using the form.
 4. Images link used in website development are as follows :
+   
    à. Restaurant: https://i.postimg.cc/d0vqXvLq/file-0000000064d862309d157c13eb0805bd.png
+   
    b. Pasta : https://i.postimg.cc/rw1nh2BC/pasta.jpg
+   
    c. Burger : https://i.postimg.cc/QM5XYCXY/burger.jpg
+   
    d. Pizza : https://i.postimg.cc/sx57Vs9T/pizza.jpg
 
    ## ✍️ Author
 
-Name : Rohan Santosh Patil              Email: rohan003rohan@gmail.com
+Name : Rohan Santosh Patil
+
+Email: rohan003rohan@gmail.com
+
 GitHub: Rohan-Patil-007
+
 https://github.com/Rohan-Patil-007
 
 ---
